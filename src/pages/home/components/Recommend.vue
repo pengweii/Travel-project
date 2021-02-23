@@ -2,7 +2,7 @@
   <div>
     <div class="recommend-title">热销推荐</div>
     <ul>
-      <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+      <li class="item border-bottom" v-for="item of list" :key="item.id">
         <img class="item-img" :src="item.imgUrl"/>
         <div class="item-info">
           <p class="item-title">{{item.title}}</p>
@@ -17,25 +17,8 @@
 <script>
 export default {
   name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [{
-        id: '0001',
-        imgUrl: 'https://img1.qunarzz.com/travel/poi/1804/f8/654d1576a7497d37.jpg',
-        title: '北戴河观日',
-        desc: '【北戴河一日游】北戴河+黄金海岸三选一'
-      }, {
-        id: '0002',
-        imgUrl: 'https://img1.qunarzz.com/travel/poi/1804/f8/654d1576a7497d37.jpg',
-        title: '北戴河观日',
-        desc: '【北戴河一日游】北戴河+黄金海岸三选一'
-      }, {
-        id: '0003',
-        imgUrl: 'https://img1.qunarzz.com/travel/poi/1804/f8/654d1576a7497d37.jpg',
-        title: '北戴河观日',
-        desc: '【北戴河一日游】北戴河+黄金海岸三选一'
-      }]
-    }
+  props: {
+    list: Array
   }
 }
 </script>
