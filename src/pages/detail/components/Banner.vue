@@ -24,8 +24,8 @@ export default {
   data () {
     return {
       showGallary: false,
-      imgs: ["https://img1.qunarzz.com/sight/p0/2011/b6/b65d9b97dc1caac7a3.img.jpg_600x330_a3c88afc.jpg",
-          "https://img1.qunarzz.com/sight/p0/2011/b6/b65d9b97dc1caac7a3.img.jpg_600x330_a3c88afc.jpg"]
+      imgs: ['https://img1.qunarzz.com/sight/p0/2011/b6/b65d9b97dc1caac7a3.img.jpg_600x330_a3c88afc.jpg',
+        'https://img1.qunarzz.com/sight/p0/2011/b6/b65d9b97dc1caac7a3.img.jpg_600x330_a3c88afc.jpg']
     }
   },
   methods: {
